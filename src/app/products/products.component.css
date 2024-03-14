@@ -1,0 +1,23 @@
+button {
+    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out,
+        background-color 0.8s ease-in-out;
+}
+
+button:hover {
+    border-color: #02dbf8;
+    color: #00e1ff;
+    transform: scale(1.2);
+    background-color: #2aafc1;
+}
+
+.card {
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out,
+        background-color 0.5s ease-in-out;
+}
+
+.card:hover {
+    border-color: #02dbf8;
+    color: #00e1ff;
+    transform: scale(1.1);
+    background-color: #d6f3f7;
+}

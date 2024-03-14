@@ -1,0 +1,81 @@
+<div class="container-fluid">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<!--Brand -->
+		<a class=" navbar-brand" href="#">
+			<img class="brand-logo" src="/assets/images/meo1.png" alt="logo" aria-hidden="true" height="60px">
+		</a>
+		<ul class="navbar-nav">
+			<li class="nav-item active">
+				<a class="nav-link" routerLink="/"> <span class="fa fa-home"></span> Home</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" routerLink="/list"><span class="fa fa-list"></span> Product list</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" routerLink="/userlist"><span class="fa fa-user"></span> User List</a>
+			</li>
+		</ul>
+		<ul class="navbar-nav ml-auto ">
+			<li class="nav-item active">
+				<a class="nav-link" routerLink="/cart/:id" href="#"><span class="fa fa-shopping-cart"></span> My Cart</a>
+			</li>
+			<ng-container *ngIf="!isAuthenticated()">
+				<li class="nav-item active">
+					<a class="nav-link" routerLink="/login" href="#"><span class="fa fa-user"></span> Login</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" routerLink="/register" href="#"><span class="fa fa-users"></span> Register</a>
+				</li>
+			</ng-container>
+			<ng-container *ngIf="isAuthenticated()">
+				<li class="nav-item active">
+					<a class="nav-link" (click)="logout()" routerLink="/Logout" href="#">Logout</a>
+				</li>
+			</ng-container>
+		</ul>
+	</nav>
+	<router-outlet></router-outlet>
+
+	<div class="footer">
+		<div class="row p-4 footer1 mt-3">
+			<div class=" col-lg-3 mt-4">
+				<h5>CHĂM SÓC KHÁCH HÀNG</h5>
+				<p>Chính sách bán hàng</p>
+				<p>Chính sách bảo hành</p>
+				<p>Chính sách giao hàng </p>
+				<p>Chính sách đổi trả và hoàn tiền</p>
+			</div>
+			<div class="col-lg-3 mt-4">
+				<h5>THÔNG TIN</h5>
+				<p>Giới thiệu</p>
+				<p>Quy tắc hoạt động</p>
+			</div>
+			<div class="col-lg-3 mt-4">
+				<h5>THANH TOÁN</h5>
+				<div class="row">
+					<div class="col-md-6">
+						<img src="/assets/images/jcb.jpg" alt="" width="100%" height="100%">
+					</div>
+					<div class="col-md-6">
+						<img src="/assets/images/visa.png" alt="" width="100%" height="100%">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 mt-4">
+				<div class="col-md-12">
+					<h5>THÔNG TIN KHÁCH HÀNG</h5>
+					<div class="form-group">
+						<label for=""><span class="fa fa-user"></span>Họ và tên</label>
+						<input type="text" name="" id="" class="form-control" placeholder="Họ và tên"
+							aria-describedby="helpId">
+					</div>
+					<div class="form-group">
+						<label for=""><span class="fa fa-phone"></span>Điện thoại</label>
+						<input type="text" name="" id="" class="form-control" placeholder="Điện thoại"
+							aria-describedby="helpId">
+					</div>
+					<div class="b">
+						<button type="button" class="btn btn-primary text-center">Gửi</button>
+					</div>
+				</div>
+			</div>

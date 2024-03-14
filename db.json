@@ -1,0 +1,131 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "productName": "Sen Đá Viên Đỏ",
+      "productCode": "GDN-0011",
+      "releaseDate": "March 19, 2016",
+      "description": "Sen Đá Viền Đỏ (tên khoa học: Echeveria Pulidonis) là một loại cây mọng nước phát triển chậm thuộc họ Crassulaceae với những chiếc lá thuôn dài màu xanh có viền đỏ hoặc hồng…",
+      "price": 4900000,
+      "starRating": 3.2,
+      "imageUrl": "./assets/images/sendado.jpg",
+      "inStock": 10
+    },
+    {
+      "id": "2",
+      "productName": "Sen Đá Kim Cương",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "Sen đá kim cương (Pachyphytum compactum) thuộc họ Crassulaceae, xuất hiện chủ yếu ở Bắc bán cầu và Nam Phi. Loài cây này có đặc điểm chiều cao trung bình khoảng 14cm và thân cây ngắn, mọc thành cụm nhỏ.",
+      "price": 4280000,
+      "starRating": 4.2,
+      "imageUrl": "./assets/images/sendakimcuong.jpg",
+      "inStock": 11
+    },
+    {
+      "id": "5",
+      "productName": "Sen Đá Nâu",
+      "productCode": "TBX-0048",
+      "releaseDate": "May 21, 2016",
+      "description": "Sen đá nâu thuộc dòng Grapto là một trong những loài sen đá được yêu thích bởi màu sắc và hình dáng độc đáo, cũng như đặc tính “khó ưa”. Nó là một trong những cây cảnh mini thường được ứng dụng trong trang trí tiểu cảnh sân vườn.",
+      "price": 3950000,
+      "starRating": 4.8,
+      "imageUrl": "./assets/images/sendanau.png",
+      "inStock": 15
+    },
+    {
+      "id": "8",
+      "productName": "Sen Đá Phật Bà",
+      "productCode": "TBX-0022",
+      "releaseDate": "May 15, 2016",
+      "description": "Sen đá phật bà là một trong những loại cây mọng nước được nhiều người yêu thích và trở thành từ khóa tìm kiếm phổ biến nhất trên Google. Với hình dáng độc đáo và cái tên đầy ý nghĩa, sen phật bà mang đến cho người trồng sự thích thú và hứng thú.",
+      "price": 3900000,
+      "starRating": 3.7,
+      "imageUrl": "./assets/images/sendaphatba.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "10",
+      "productName": "Sen Đá Hồng Mập",
+      "productCode": "GMG-0042",
+      "releaseDate": "October 15, 2015",
+      "description": "Sen đá hồng mập được xếp vào danh sách top các loài sen đá dễ trồng. Bởi vì cây dễ sinh trưởng hơn, dễ đẻ cây con và giá thành rất bình dân. Đặc biệt khi trưởng thành cây cho dáng thụ rất đẹp và chắc khỏe.",
+      "price": 4800000,
+      "starRating": 4.6,
+      "imageUrl": "./assets/images/sendahongmap.jpg",
+      "inStock": 20
+    },
+    {
+      "id": "11",
+      "productName": "Sen Đá RuBy",
+      "productCode": "GMG-0042",
+      "releaseDate": "October 15, 2015",
+      "description": "Sen đá ruby xanh là loại cây mọng nước với nguồn gốc chủ yếu tại Bắc Mỹ. Với sự phát triển của kỹ thuật nhân giống, loại cây này đã được trồng rộng rãi tại nhiều nơi trên thế giới.",
+      "price": 12800000,
+      "starRating": 4.6,
+      "imageUrl": "./assets/images/sendaruby.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "15",
+      "productName": "Sen Đá Thạch Ngọc",
+      "productCode": "GMG-0042",
+      "releaseDate": "September 15, 2015",
+      "description": "Sen đá cỏ ngọc còn được nhiều bạn gọi là sen đá thạch thảo, là một loại cây sen đá nhỏ gọn, tinh tế và có sắc màu xanh nhẹ nhàng, trang nhã. Với vẻ đẹp tự nhiên gần gũi hình dáng như những bụi cỏ xinh xắn, nên thường được trồng phối kết tiểu cảnh sen đá.",
+      "price": 13800000,
+      "starRating": 5,
+      "imageUrl": "./assets/images/sendathachngoc.jpg",
+      "inStock": 13
+    },
+    {
+      "id": "17",
+      "productName": "Sen Đá Hoa Hồng",
+      "productCode": "GMG-0042",
+      "releaseDate": "May 15, 2015",
+      "description": "Sen đá hồng Hà Lan (có tên khoa học là Graptoveria ‘Lovely Rose’) là một loài cây thuộc chi xGraptoveria, được tạo ra thông qua sự lai giữa hai chi Graptopetalum và Echeveria.Cây thuộc dạng thân cành, mọc dài khi trưởng thành và lá mọc đều như bông hoa hồng, lá có màu xanh lấp lánh phủ phấn bạc bên trên tạo nên một hình ảnh rất đẹp và cuốn hút.",
+      "price": 14800000,
+      "starRating": 3.6,
+      "imageUrl": "./assets/images/sendahoahong.jpg",
+      "inStock": 17
+    },
+    {
+      "id": "19",
+      "productName": "Sen Đá SeDum",
+      "productCode": "GMG-0042",
+      "releaseDate": "October 15, 2015",
+      "description": "Sen Đá Sedum, có nguồn gốc từ châu Phi và Nam Mỹ, là một trong những loại cây cảnh phổ biến và được ưa chuộng rộng rãi trong làng cây cảnh hiện nay. Sen Đá Sedum thuộc một chi lớn của họ Crassulaceae và đặc biệt nổi bật bởi vẻ đẹp và tính chất thú vị của nó.",
+      "price": 17800000,
+      "starRating": 4.2,
+      "imageUrl": "./assets/images/sendasedum.png",
+      "inStock": 19
+    },
+    {
+      "id": "08a8",
+      "productName": "Sen đá truyền thống",
+      "productCode": "001",
+      "releaseDate": "2024-03-06",
+      "price": 14000,
+      "description": "Đẹp",
+      "starRating": 5,
+      "inStock": "13",
+      "imageUrl": "./assets/images/do.jpg"
+    }
+  ],
+  "User": [
+    {
+      "id": "2",
+      "email": "itc.edu.vn@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "3",
+      "email": "nvb@gmail.com",
+      "password": "28052004"
+    },
+    {
+      "id": "31",
+      "email": "nguyenthingoccua2004@gmail.com",
+      "password": "123456789"
+    }
+  ]
+}

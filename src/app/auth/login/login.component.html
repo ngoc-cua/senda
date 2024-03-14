@@ -1,0 +1,31 @@
+<div class="container offset">
+    <div class="col-lg-6 justify-center mt-3 bg-light div" style="box-shadow: 2px 2px 4px 4px rgb(255, 142, 217);">
+        <h3 class="text-center">Login</h3>
+        <form (ngSubmit)="submit()" #myForm="ngForm">
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" [(ngModel)]="form.email" name="email" id="email" class="form-control"
+                    placeholder="Email Address" #email="ngModel" aria-describedby="helpId" required>
+                <small *ngIf="email.invalid&&(email.touched||email.dirty)" id="helpId" class="text-danger">Email
+                    fieldmust
+                    be valid</small>
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" [(ngModel)]="form.password" minlength="8" name="pass" id="pass" autoComplete="on"
+                    class="form-control" placeholder="Password" #pass="ngModel" aria-describedby="helpId" required>
+                <small *ngIf="pass.invalid&&(pass.touched||pass.dirty)" id="helpId" class="alert">
+                    <small *ngIf="pass.errors?.['required']" id="helpId" class="text-danger">Password field must be
+                        valid</small>
+                    <small *ngIf="pass.errors?.['minlength']" id="helpId" class="text-danger">Pass must be at least
+                        8
+                        characters long.</small>
+                </small>
+            </div>
+            <button type="submit" style="margin-top: 10px;background-color: rgb(226, 69, 69);"
+                [disabled]="myForm.form.invalid" class="btn btn-primary mb-2">
+                <ng-container>Submit</ng-container>
+            </button>
+        </form>
+    </div>
+</div>

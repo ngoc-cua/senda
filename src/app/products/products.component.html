@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="col-lg-4" *ngFor="let item of productHome">
+		<div class="card-deck mt-3">
+			<div class="card" style="box-shadow: 2px 2px 4px 4px rgb(255, 142, 217);">
+				<img class="card-img-top p-3" src="{{item.imageUrl}}" width="70%" height="200px" alt="">
+				<div class="card-body text-center">
+					<h2 class="card-title"
+						style=" text-align: center; font-size:30px;font-family:  'Times New Roman', Times, serif;color:#444444">
+						{{item.productName}}</h2>
+					<h3 class="card-text font-weight-bold font-italic"
+						style="font-family: Georgia, 'Times New Roman', Times, serif;background-color:#FFCCFF; color:#FF0033; font-size:25px">
+						{{item.price}}đ</h3>
+					<button class="btn btn-primary" style="box-shadow: 1px 1px 2px 2px rgb(230, 47, 77);">
+						<a routerLink="/product-details/{{item.id}}" style=" color: white">Xem</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

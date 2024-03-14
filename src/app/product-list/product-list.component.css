@@ -1,0 +1,21 @@
+.div {
+    background: linear-gradient(#ACCC8B,#b6d4b5);
+    height: calc(100%);
+    width: calc(100%);
+    border-radius: 10px;
+    border: 2px solid white;
+}
+button {
+    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out,
+        background-color 0.8s ease-in-out;
+    background-color: #b2b9c1;
+    font-weight: 5px;
+    border: 3px solid #2aafc1;
+    margin-left: 80px;
+}
+
+button:hover {
+    color: #fee7ed;
+    transform: scale(1.2);
+    background-color: #2aafc1;
+}

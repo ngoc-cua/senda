@@ -1,0 +1,79 @@
+<!-- <div class="col-md-6 text-right"> -->
+<button type="button" class="btn btn-primary btn-md  mt-3 mb-3" data-toggle="modal" data-target="#modelId">Add
+    new</button>
+<!-- </div> -->
+<table class="table table-bordered div">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Email </th>
+            <!-- <th>Pass</th> -->
+
+            <!-- <th>PassWord</th> -->
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of userList ; let i=index">
+
+
+            <td>{{item.id}}</td>
+            <td>{{item.email}}</td>
+            <!-- <td>{{item.password}}</td> -->
+            <!-- <td>{{item.starRating}}</td> -->
+            <td>
+                <button class="btn">
+                    <span class="badge badge-primary" data-toggle="modal" data-target="#modelId"
+                        (click)="IsAdd=0;IsUpdate=2" (click)="Edit(i)">Edit</span>
+                </button>
+
+                <button class="btn">
+                    <span class="badge badge-danger" (click)="Delete(i)">Delete</span>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" arialabelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">User</h5>
+                <button type="button" class="close" data-dismiss="modal" arialabel="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formUser">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="text" [formControl]="formUser.controls.email" name="" id=""
+                                    class="form-control" placeholder="" ariadescribedby="helpId">
+                                <!--<small id="helpId" class="text-muted">Help text</small>-->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Pass</label>
+                                <input type="text" [formControl]="formUser.controls.password" name="" id=""
+                                    class="form-control" placeholder="" ariadescribedby="helpId">
+                                <!--<small id="helpId" class="text-muted">Help text</small>-->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" *ngIf="IsAdd==1" (click)="Add()">Save</button>
+                <button type="button" class="btn btn-primary" *ngIf="IsUpdate==2" (click)="Update()">Save Update
+                </button>
+                <button type="button" class="btn btn-secondary" (click)="IsAdd=1;IsUpdate=0"
+                    data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
